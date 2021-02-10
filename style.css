@@ -596,7 +596,7 @@ textarea.input {
 
 @media (max-width: 480px) {
   .containerC {
-    padding: 25px;
+    padding: 1.5rem;
     flex-direction: row-reverse;
   }
 

@@ -45,7 +45,8 @@ main {
 }
 
 .navbar-nav {
-  float: right;
+  float: none;
+  margin: 20px 0;
 }
 
 .center {
@@ -220,11 +221,15 @@ main {
 }
 @media only screen and (max-width: 767px) {
   .navbar-nav.ml-auto {
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(78, 78, 78, 0.37);
+    backdrop-filter: blur(15px);
   }
   .navbar-nav a {
     font-size: 14px;
     font-weight: normal;
+  }
+  .navbar-nav {
+    float: none;
   }
 }
 

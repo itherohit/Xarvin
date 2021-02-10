@@ -596,10 +596,8 @@ textarea.input {
 
 @media (max-width: 480px) {
   .containerC {
-    padding: 1.5rem 0;
+    padding: 25px;
     flex-direction: row-reverse;
-
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   }
 
   .contact-info:before {

@@ -12,9 +12,10 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
-  background-color: rgb(255, 255, 255);
   transition: 0.5s all;
   line-height: 1.5;
+  background-color: black;
+  position: relative;
 }
 
 main {
@@ -22,6 +23,30 @@ main {
   font-family: "Roboto", sans-serif;
   position: relative;
   padding-bottom: 100px;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.gradient {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .header {
@@ -76,7 +101,7 @@ main {
 }
 
 .productRow {
-  background-color: #f0f0f0;
+  background-color: #393e46;
   border-radius: 25px;
   padding: 25px;
   margin-bottom: 50px;
@@ -86,6 +111,7 @@ main {
   font-weight: 700;
   font-size: 2.25rem;
   margin-bottom: 10px;
+  color: white;
 }
 
 .aboutUs p {
@@ -93,13 +119,26 @@ main {
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 300;
+  color: #eeeeee;
+}
+
+.productsImages img {
+  width: 80% !important;
 }
 
 .productsDesc {
   text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.productsDesc h4 {
+  color: white;
+}
+
+.productsDesc p {
+  color: #ddd;
 }
 
 .products h3 {
@@ -108,15 +147,24 @@ main {
 
 .productsButton a {
   padding: 8px 16px;
-  background-color: rgb(65, 65, 247);
+  background-color: #1b1f25;
   border-radius: 20px;
   margin-right: 20px;
   color: white;
 }
 
+.productsButton a:hover {
+  padding: 8px 16px;
+  background-color: #1b1f25;
+  border-radius: 20px;
+  margin-right: 20px;
+  text-decoration: none !important;
+  color: white;
+}
+
 .productsButton button {
   padding: 7px 14px;
-  background-color: #1abc9c;
+  background-color: #393e46;
   border-radius: 20px;
   margin-right: 20px;
   color: white;
@@ -127,7 +175,7 @@ main {
 } */
 
 .footer {
-  background-color: #149279;
+  background-color: #222831;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -135,6 +183,11 @@ main {
   color: white;
   font-size: 1.25rem;
   font-weight: 400;
+}
+
+.footer p {
+  color: gainsboro;
+  font-size: 1rem;
 }
 
 .aboutUs span,
@@ -261,21 +314,22 @@ main {
     margin-top: 25px;
   }
   .productsDesc p {
-    padding: 0 25px;
+    padding: 0 20px;
+    margin-top: 15px;
   }
   .productsDesc h4 {
     font-weight: bold;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
+    padding: 0 20px;
   }
   .productsButton {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    padding: 0 20px;
+    margin: 15px 0;
   }
   .productsButton a,
   .productsButton button {
-    margin-right: 0;
+    margin-right: 15px;
   }
   .productRow {
     padding: 25px 10px;
@@ -306,13 +360,13 @@ main {
 }
 
 .contact-form {
-  background-color: #1abc9c;
+  background-color: #393e46;
   position: relative;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #149279);
+  background: linear-gradient(135deg, transparent 20%, #222831);
   position: absolute;
 }
 
@@ -335,7 +389,7 @@ main {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #1abc9c;
+  background-color: #393e46;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -405,9 +459,8 @@ textarea.input {
 .btn {
   padding: 0.6rem 1.3rem;
   background-color: #fff;
-  border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #1abc9c;
+  color: #393e46;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -441,7 +494,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #1abc9c;
+  background-color: #393e46;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -473,7 +526,7 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #1abc9c;
+  color: #393e46;
 }
 
 .text {
@@ -515,7 +568,7 @@ textarea.input {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #1abc9c, #149279);
+  background: linear-gradient(45deg, #393e46, #222831);
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -532,7 +585,7 @@ textarea.input {
   position: absolute;
   width: 110px;
   height: 100px;
-  border: 22px solid #1abc9c;
+  border: 22px solid #393e46;
   border-radius: 50%;
   bottom: -77px;
   right: 50px;
@@ -668,10 +721,12 @@ textarea.input {
   max-width: 90%;
   margin: 25px auto;
   margin-top: 70px;
+  background-color: transparent;
 }
 
 .card {
   border: none;
+  background-color: transparent;
 }
 
 .center {
@@ -720,7 +775,7 @@ img {
   text-transform: capitalize;
   font-weight: 700;
   position: relative;
-  color: #12263a;
+  color: white;
   margin: 1rem 0;
 }
 .product-title::after {
@@ -730,7 +785,7 @@ img {
   bottom: 0;
   height: 4px;
   width: 80px;
-  background: #12263a;
+  background: white;
 }
 .product-link {
   text-decoration: none;
@@ -771,13 +826,14 @@ img {
 }
 .product-detail h2 {
   text-transform: capitalize;
-  color: #12263a;
+  color: white;
   padding-bottom: 0.6rem;
 }
 .product-detail p {
   font-size: 0.9rem;
   padding: 0.3rem;
   opacity: 0.8;
+  color: gainsboro;
 }
 .product-detail ul {
   margin: 1rem 0;
@@ -791,17 +847,18 @@ img {
   padding-left: 1.7rem;
   margin: 0.4rem 0;
   font-weight: 600;
+  color: white;
   opacity: 0.9;
 }
 .product-detail ul li span {
   font-weight: 400;
+  color: gainsboro;
 }
 .purchase-info {
   margin: 1.5rem 0;
 }
 .purchase-info input,
 .purchase-info .btn {
-  border: 1.5px solid #ddd;
   border-radius: 25px;
   text-align: center;
   padding: 0.45rem 0.8rem;
@@ -817,11 +874,10 @@ img {
   color: #fff;
   font-size: 1rem;
 }
-.purchase-info .btn:first-of-type {
-  background: #256eff;
-}
 .purchase-info .btn:last-of-type {
   background: #09c228;
+  padding: 7px 15px;
+  font-size: 1.25rem;
 }
 .purchase-info .btn:hover {
   opacity: 0.9;
@@ -848,6 +904,10 @@ img {
   background: #000;
   border-color: transparent;
   color: #fff;
+}
+
+.info__icon {
+  margin-right: 20px;
 }
 
 @media screen and (min-width: 992px) {

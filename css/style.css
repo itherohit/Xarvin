@@ -126,11 +126,15 @@ main {
   width: 80% !important;
 }
 
+.productRow .row {
+  display: flex;
+  align-items: center;
+}
+
 .productsDesc {
   text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .productsDesc h4 {

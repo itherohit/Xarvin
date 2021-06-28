@@ -7,12 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Xarvin</title>
 </head>
 <body>
@@ -81,66 +78,23 @@
             <span id="product"></span>
             <h3>Products</h3>
             <!-- <hr style="width: 65px; height: 5px; border-radius: 10px; background-color: black; text-align: center; margin: auto; margin-bottom: 15px;"> -->
-            <div class="container-fluid  productRow" data-aos="fade-up">
-                <div class="row">
-                    <div class="col-md-4 productsImages center">
-                        <img src="img/Picture1.png" alt="" width="80%">
-                    </div>
-                    <div class="col-md-8 productsDesc">
-                        <h4>X1 1SIDED HOLOGRAPHIC DISPLAY UNIT</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id eveniet maiores, non autem delectus optio facere animi fugiat necessitatibus magnam omnis qui amet odio et blanditiis provident voluptatibus aliquid.</p>
-                        <div class="productsButton">
-                            <a href="/product.html">View Specs</a>
-                            <a href="#contact" style="background-color: #0ab47b;">Buy Now</a>
+            <% products.map(product => { %>
+                <div class="container-fluid  productRow" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-md-4 productsImages center">
+                            <img src=<%= product.images[0] %> alt="" width="80%">
+                        </div>
+                        <div class="col-md-8 productsDesc">
+                            <h4><%= product.title %></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id eveniet maiores, non autem delectus optio facere animi fugiat necessitatibus magnam omnis qui amet odio et blanditiis provident voluptatibus aliquid.</p>
+                            <div class="productsButton">
+                                <a href=<%= "/products/" + product.id %> >View Specs</a>
+                                <a href="#contact" style="background-color: #0ab47b;">Buy Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid productRow" data-aos="fade-up">
-                <div class="row">
-                    <div class="col-md-4 productsImages center">
-                        <img src="img/Picture3.jpg" alt="" width="80%">
-                    </div>
-                    <div class="col-md-8 productsDesc">
-                        <h4>X3 3SIDED HOLOGRAPHIC DISPLAY UNIT</h4>
-                        <p>Lorem ipsum lore dolor sit amet consectetur adipisicing elit. Nam id eveniet maiores, non autem delectus optio facere animi fugiat necessitatibus magnam omnis qui amet odio et blanditiis provident voluptatibus aliquid.</p>
-                        <div class="productsButton">
-                            <a href="/product.html">View Specs</a>
-                            <a href="#contact" style="background-color: #0ab47b;">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid  productRow" data-aos="fade-up">
-                <div class="row">
-                    <div class="col-md-4 productsImages center">
-                        <img src="img/Picture2.png" alt="" width="80%">
-                    </div>
-                    <div class="col-md-8 productsDesc">
-                        <h4>X4 4SIDED HOLOGRAPHIC DISPLAY UNIT</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id eveniet maiores, non autem delectus optio facere animi fugiat necessitatibus magnam omnis qui amet odio et blanditiis provident voluptatibus aliquid.</p>
-                        <div class="productsButton">
-                            <a href="/product.html">View Specs</a>
-                            <a href="#contact" style="background-color: #0ab47b;">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid  productRow" data-aos="fade-up">
-                <div class="row">
-                    <div class="col-md-4 productsImages center">
-                        <img src="img/Picture4.jpg" alt="" width="80%">
-                    </div>
-                    <div class="col-md-8 productsDesc">
-                        <h4>XF65 HOLOGRAPHIC FAN</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id eveniet maiores, non autem delectus optio facere animi fugiat necessitatibus magnam omnis qui amet odio et blanditiis provident voluptatibus aliquid.</p>
-                        <div class="productsButton">
-                            <a href="/product.html">View Specs</a>
-                            <a href="#contact" style="background-color: #0ab47b;">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <% }) %>
         </div>
         <div class="containerC">
             <span id="contact"></span>

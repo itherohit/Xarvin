@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "title": "X1 1SIDED HOLOGRAPHIC DISPLAY UNIT",
+        "displaySize": "10”, 22”, 24”, 27”, 32”, 42”, 60”",
+        "control": "Mouse | Touch | Air-gesture | Smart Phone",
+        "input": "USB Pen-drive | HDMI",
+        "audio": "Stereo Speakers",
+        "type": "1x Side Viewing",
+        "colour": "Black | Grey | White | Custom",
+        "optics": "Toughened Fiber Glass – 5mm",
+        "images": ["/img/Picture1.png"]
+    },
+    {
+        "id": 2,
+        "title": "X3 3SIDED HOLOGRAPHIC DISPLAY UNIT",
+        "displaySize": "3*10”, 22”, 24”, 27”, 32” ,42”, 60”",
+        "control": "Mouse | Touch | Air-gesture | Smart Phone",
+        "input": "USB Pen-drive | HDMI",
+        "audio": "Stereo Speakers",
+        "type": "3x Side Viewing",
+        "colour": "Black | Grey | White | Custom",
+        "optics": "Toughened Fiber Glass – 5mm",
+        "images": ["/img/Picture3.jpg"]
+    },
+    {
+        "id": 3,
+        "title": "X4 4SIDED HOLOGRAPHIC DISPLAY UNIT",
+        "displaySize": "4* 10”, 22”, 24”, 27”, 32” ,42”, 60”",
+        "control": "Mouse | Touch | Air-gesture | Smart Phone",
+        "input": "USB Pen-drive | HDMI",
+        "audio": "Stereo Speakers",
+        "type": "4x Side Viewing",
+        "colour": "Black | Grey | White | Custom",
+        "optics": "Toughened Fiber Glass – 5mm",
+        "images": ["/img/Picture2.png"]
+    },
+    {
+        "id": 4,
+        "title": "XF65 HOLOGRAPHIC FAN",
+        "displaySize": "15cm, 30cm, 45cm, 50cm, 65cm, 90cm",
+        "control": "Air-gesture | Smart Phone",
+        "input": "USB Pen-drive | SD CARD",
+        "audio": "Speakers",
+        "type": "2-Blade Fan | 4-Blade Fan",
+        "colour": "Black",
+        "images": ["/img/Picture4.jpg"]
+    }
+]
